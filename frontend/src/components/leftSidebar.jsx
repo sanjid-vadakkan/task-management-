@@ -115,7 +115,7 @@ const LeftSidebar = () => {
                   key={index}
                   onClick={() => day && setSelectedDate(day)}
                   className={`h-8 text-sm rounded transition-colors ${day === selectedDate
-                    ? 'bg-blue-500 text-white'
+                    ? 'bg-white-500 text-white'
                     : day === today
                       ? 'bg-orange-100 text-orange-600'
                       : day
