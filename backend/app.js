@@ -6,8 +6,16 @@ var logger = require('morgan');
 const cors = require('cors'); 
 const connectDB = require('./config/db'); // DB connection
 require('dotenv').config();
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
 
+dotenv.config();
 
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+}).then(() => console.log('✅ MongoDB Connected'))
+  .catch(err => console.log(err));
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -20,7 +28,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.use(cors());
-connectDB(); //  connect to MongoDB
+// connectDB(); 
+
+
 
 app.use(logger('dev'));
 app.use(express.json());
