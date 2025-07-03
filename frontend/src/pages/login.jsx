@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar.jsx";
 import { FaFacebook, FaApple } from 'react-icons/fa';
 import { FcGoogle } from "react-icons/fc";
 import { Link, useNavigate } from 'react-router-dom';

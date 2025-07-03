@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaFacebook, FaApple } from 'react-icons/fa';
 import { FcGoogle } from "react-icons/fc";
-import Navbar from "../components/Navbar";
+import Navbar from "../components/navbar.jsx";
 import API from "../utils/axios";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
