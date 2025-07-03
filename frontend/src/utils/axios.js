@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: 'https://taskmanagementa.netlify.app' ,
+  baseURL: 'https://task-managem.onrender.com' ,
   headers: {
     "Content-Type": "application/json",
   },
